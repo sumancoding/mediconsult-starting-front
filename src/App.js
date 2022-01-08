@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./components/Header";
 import "./App.css";
 import logo from "./Images/logo.PNG";
-import Button from "./button";
-import Footer from "./footer";
+import Button from "./components/button";
+import Footer from "./components/footer";
 
 function App() {
   return (

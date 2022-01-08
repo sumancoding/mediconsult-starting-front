@@ -55,9 +55,6 @@ a {
 a:hover {
   color: orange;
 }
-.face:hover {
-  background-color: crimson;
-}
 
 img {
   display: block;
@@ -126,6 +123,15 @@ li {
 .col .list-unstyled {
   display: flex;
   padding: 3px;
+}
+
+.dash-board {
+  color: #52aad8;
+  padding: 15px;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  border-bottom: solid #52aad8 2px;
 }
 
 /*
