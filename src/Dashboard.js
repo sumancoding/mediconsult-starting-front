@@ -1,5 +1,122 @@
 import React from "react";
 import "./App.css";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import {
+  Tooltip,
+  IconButton,
+  TextField,
+  FormControl,
+  Typography,
+  Stack,
+  Button,
+} from "@mui/material";
+function Dashboard() {
+  return (
+    <div>
+      <h1> My DashBoard </h1>
+      <div id="container">
+        <div className="item-one">
+          <div className="circle">
+            <Tooltip title="Select Image">
+              <label htmlFor="faceImage">
+                <IconButton color="primary">
+                  <AddAPhotoIcon fontSize="large" />
+                </IconButton>{" "}
+                <br />
+                <strong> Upload Image</strong>
+              </label>
+            </Tooltip>
+          </div>{" "}
+          <div className="text-one">
+            <form>
+              <FormControl>
+                <AccountCircle sx={{ color: "action.active", mr: 30, my: 0 }} />
+                <TextField
+                  id="standard-basic"
+                  margin="dense"
+                  variant="standard"
+                />
+                <br />
+                <TextField
+                  label={"Designation:"}
+                  id="standard-basic"
+                  margin="dense"
+                  variant="standard"
+                />{" "}
+                <br />
+                <TextField
+                  label={"Email:"}
+                  id="standard-basic"
+                  margin="dense"
+                  variant="standard"
+                />{" "}
+                <br />
+                <TextField
+                  label={"City:"}
+                  id="standard-basic"
+                  margin="dense"
+                  variant="standard"
+                />
+              </FormControl>
+            </form>
+          </div>
+        </div>
+        <div className="item-two">
+          <form>
+            <FormControl>
+              <Typography sx={{ fontSize: 26 }} color="text.secondary">
+                UpComing Reservation Details:
+              </Typography>
+              <br />
+              <TextField
+                label={"City:"}
+                id="standard-basic"
+                variant="standard"
+                sx={{ mr: 20, my: 4 }}
+              />{" "}
+              <TextField
+                label={"Building:"}
+                id="standard-basic"
+                sx={{ mr: 20, my: 4 }}
+                variant="standard"
+              />
+              <TextField
+                label={"Room:"}
+                id="standard-basic"
+                sx={{ mr: 20, my: 4 }}
+                variant="standard"
+              />
+              <TextField
+                label={"Spot:"}
+                id="standard-basic"
+                sx={{ mr: 20, my: 4 }}
+                variant="standard"
+              />
+              <TextField
+                label={"Date:"}
+                id="standard-basic"
+                sx={{ mr: 20, my: 4 }}
+                variant="standard"
+              />
+              <br />
+              <Stack direction="row" spacing={2}>
+                <Button variant="outlined">Add new</Button>
+                <Button variant="outlined">Modify</Button>
+                <Button variant="outlined">Delete</Button>
+              </Stack>
+            </FormControl>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Dashboard;
+
+/*import React from "react";
+import "./App.css";
 import {
   Grid,
   Box,
@@ -241,3 +358,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+*/
